@@ -387,8 +387,6 @@ imu_pub_ = in.advertise<sensor_msgs::Imu>("imu", 10);
                     break;
                 case ST::CaptureSessionSample::Type::SynchronizedFrames:
                     {
-//handleAccel(sample.accelerometerEvent);
-// handleGyro(sample.gyroscopeEvent);
                         publishDepthFrame(sample.depthFrame);
 
                         publishVisibleFrame(sample.visibleFrame);
@@ -405,14 +403,14 @@ imu_pub_ = in.advertise<sensor_msgs::Imu>("imu", 10);
                     break;
                 case ST::CaptureSessionSample::Type::AccelerometerEvent:
                     {
-                      if(acc == 10) {handleAccel(sample.accelerometerEvent);acc=0;}
+                      if (acc == 10) {handleAccel(sample.accelerometerEvent);acc=0;}
                       acc = acc + 1;
-                      //std::cout<<acc<<std::endl;
+ 
                     }
                     break;
                 case ST::CaptureSessionSample::Type::GyroscopeEvent:
                     {
-                      if(gy==10) {handleGyro(sample.gyroscopeEvent);gy=0;}
+                      if (gy==10) {handleGyro(sample.gyroscopeEvent);gy=0;}
                       gy = gy + 1;
                     }
                     break;
