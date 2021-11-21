@@ -8,13 +8,8 @@ The motivation is to use it as the device for RGB-D and inertial sensor fusion. 
 
 To run and build:
 
-1) From your Structure Core SDK download, copy the .so library from:
-''''
-Libraries/Structure/Linux/x86_64 to lib/libStructure.so
-''''
+1) From your Structure Core SDK download, copy the .so library from: Libraries/Structure/Linux/x86_64 to lib/libStructure.so
 2) Copy the ST folder from Libaries/Shared/Headers to include/ST
-
-into this repo.
 
 Then run:
 
