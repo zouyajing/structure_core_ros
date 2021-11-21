@@ -1,3 +1,5 @@
+# structure_core_ros
+
 Folked from https://github.com/chadrockey/structure_core_ros, and additional IMU topic is published.
 The motivation is to use it as the device for RGB-D and inertial sensor fusion. Seems the quality is not good enough. 
 Poor color and IMU. No time sync. 
