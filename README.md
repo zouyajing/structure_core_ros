@@ -1,20 +1,18 @@
 
 # structure_core_ros
 
-Folked from https://github.com/chadrockey/structure_core_ros, and additional IMU topic is published.
-The motivation is to use it as the device for RGB-D and inertial sensor fusion. Seems the quality is not good enough. 
-Poor color and IMU. No time sync. 
+Folked from https://github.com/chadrockey/structure_core_ros. Additional IMU topic is published.
+
+The motivation is to use it as the device for RGB-D and inertial sensor fusion. However, the quality is not good enough: 1. poor color image and unstable IMU frequency; 2. no time sync between IMU and cameras.
 
 
 To run and build:
 
 1) From your Structure Core SDK download, copy the .so library from:
-
+''''
 Libraries/Structure/Linux/x86_64 to lib/libStructure.so
-
-2) Copy the ST folder from
-
-Libaries/Shared/Headers to include/ST
+''''
+2) Copy the ST folder from Libaries/Shared/Headers to include/ST
 
 into this repo.
 
