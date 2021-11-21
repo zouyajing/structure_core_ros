@@ -1,3 +1,7 @@
+#  FLVIS
+The implementation of Feedforward-feedback Loop-based Visual Inertial System. If you want to use FLVIS with GPU acceleration, try this [repo](https://github.com/JazzyFeng/FLVIS-gpu).
+
+### 1-Video
 # structure_core_ros
 
 Folked from https://github.com/chadrockey/structure_core_ros, and additional IMU topic is published.
